@@ -11,11 +11,11 @@ Hello there. My name's David, I'm 23 years old, and I hail from Ireland.
 
 ### Interaction System
 --------------------
-*A sphere collision volume is created on the player pawn.
-*Inside my project settings I created a custom collision channel called 'Interactable'.
-*An interface also called 'Interactable' was created with two methods: 'Interact' and 'Exit Interact'.
-*Whenever I wanted to make an actor interactable, I first selected an actor's static mesh component or if the actor didn't have any mesh associated with it I would create a volume. 
-*Next, I'd implement the Interactable interface providing custom functionality for the actor in question.
+####Setup
+*Created custom collision channel in project settings called 'Interactable'.
+*Made sphere collision volume on player character that only does checks for the above channel.
+*An interface also called 'Interactable' was built with two methods: 'Interact' and 'Exit Interact'.
+####Method
 
 ### Day-Night Cycle
 --------------------
