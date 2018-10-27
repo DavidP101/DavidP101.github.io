@@ -35,10 +35,17 @@ To create an actor that's capable of interaction: I first changed the collision 
 
 ### Trees
 --------------
+I created my trees using the methods outlined in the tutorials below. However, to provide a quick summary: The bark/branch shape is created by joining vertices. Skin, subdivide and decimate modifiers are then applied. The leaves of the tree are then created by intersecting planes. I used a mask I found off a udk doc page for my leaf mask.
+
+#### References:
+
+1. Bark creation: https://www.youtube.com/watch?v=wB0VgyN8tOw
+1. Tree creation: https://www.youtube.com/watch?v=_Br6Xq4LZcI
+1. Texture mask for leaf plane: https://api.unrealengine.com/udk/Three/rsrc/Three/SoftMasked/GoodLeafMask.jpg
 
 ### Grass
 --------------
-* A mask was created inside MS Paint and then applied to 5-6 planes in blender. These planes were then intersected with one another and imported into UE4.
+A mask was created inside MS Paint and then applied to 5-6 planes in blender. These planes were then intersected with one another and imported into UE4.
 
 ### Flowers
 --------------
