@@ -35,7 +35,11 @@ To create an actor that's capable of interaction: I first changed the collision 
 
 ### Trees
 --------------
-I created my trees using the methods outlined in the tutorials below. However, to provide a quick summary: The bark/branch shape is created by joining vertices. Skin, subdivide and decimate modifiers are then applied. The leaves of the tree are then created by intersecting planes. I used a mask I found off a udk doc page for my leaf mask.
+I created my trees using the methods outlined in the tutorials below. However, to provide a quick summary: 
+* The bark/branch shape is created by joining vertices. 
+* Skin, subdivide and decimate modifiers are then applied. 
+* The leaves of the tree are then created by intersecting planes. 
+* I used a texture I found off a udk doc page for my leaf mask.
 
 #### References:
 
