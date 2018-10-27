@@ -9,7 +9,7 @@ Hello there. My name's David, I'm 23 years old, and I hail from Ireland.
 ## Overview
 -----------
 From a young age I've loved to play RPGs and it's remained my favourite genre of game throughout my life. Being an aspiring Game Dev I naturally gravitated towards this genre and wanted to try my hand at creating some RPG mechanics (listed below). The premise for this project is that the player is situated on an island and is helping the local islanders in preparation for a small fireworks display. The player helps the islanders by completing quests; these quests are then fulfilled by interacting with various actors throughout the world (through dialogue or by standard methods).
-I encountered a good few challenges along the way and will these discuss these in my Lessons Learned section. What follows here is a list of the main features in the project and a basic description of each.
+I encountered a good few challenges along the way and will discuss these in my Lessons Learned section. What follows here is a list of the main features in the project and a basic description of each.
 
 ## Gameplay Features
 --------------------
@@ -56,8 +56,8 @@ A mask was created inside MS Paint and then applied to 5-6 planes in blender. Th
 
 ### Flowers
 --------------
-Textures sourced from a Udemy Blender Course
+The flowers were created much the same way as the grass, except I used textures sourced from a [Udemy Blender Course](https://www.udemy.com/blendertutorial/).
 
 ### Landscape
 --------------
-The landscape was designed using the Landscape Tool. A number of textures were sourced from the [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs) including grass, dirt, stone and water among others to provide some noise and variation.
+The landscape was designed using the Landscape Tool. A number of textures were sourced from the [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs) including grass, dirt, stone, water, and among others to provide some noise and variation.
