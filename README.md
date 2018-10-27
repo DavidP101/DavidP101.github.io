@@ -16,6 +16,8 @@ I encountered a good few challenges along the way and will these discuss these i
 
 ### Interaction System
 ----------------------
+![Interaction](/images/interaction.png)
+
 #### Setup
 * Created custom collision channel in project settings called 'Interactable'.
 * Made sphere collision volume on player character that only does checks for the above channel.
@@ -26,7 +28,7 @@ To create an actor that's capable of interaction: I first changed the collision 
 
 ### Day-Night Cycle
 -------------------
-
+![Day](/images/daytime.png)
 ### Dialogue System
 -------------------
 
