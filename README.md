@@ -1,9 +1,11 @@
-# David's game dev portfolio
+# Game Dev Portfolio
 
-This site will house my game dev portfolio.
+## About Me
+
+Hello there. My name's David, I'm 23 years old, and I hail from Ireland. 
 
 ![Night time scene](/images/nighttower.png)
 
-# Gameplay features
+## Gameplay features
 
-# Environment
+## Environment
