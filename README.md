@@ -28,7 +28,10 @@ To create an actor that's capable of interaction: I first changed the collision 
 
 ### Day-Night Cycle
 -------------------
+![Dawn](/images/dawntime.png)
 ![Day](/images/daytime.png)
+![Night](/images/nighttime.png)
+
 ### Dialogue System
 -------------------
 
@@ -56,7 +59,7 @@ A mask was created inside MS Paint and then applied to 5-6 planes in blender. Th
 
 ### Flowers
 --------------
-The flowers were created much the same way as the grass, except I used textures sourced from a [Udemy Blender Course](https://www.udemy.com/blendertutorial/).
+The flowers were created much the same way as the grass, except I used textures sourced from a Udemy Blender Course.
 
 ### Landscape
 --------------
