@@ -43,9 +43,9 @@ I created my trees using the methods outlined in the tutorials below. However, t
 
 #### References:
 
-1. Bark creation: https://www.youtube.com/watch?v=wB0VgyN8tOw
-1. Tree creation: https://www.youtube.com/watch?v=_Br6Xq4LZcI
-1. Texture mask for leaf plane: https://api.unrealengine.com/udk/Three/rsrc/Three/SoftMasked/GoodLeafMask.jpg
+1. [Bark creation] https://www.youtube.com/watch?v=wB0VgyN8tOw
+1. [Tree creation] https://www.youtube.com/watch?v=_Br6Xq4LZcI
+1. [Leaf mask] https://api.unrealengine.com/udk/Three/rsrc/Three/SoftMasked/GoodLeafMask.jpg
 
 ### Grass
 --------------
