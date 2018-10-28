@@ -102,4 +102,4 @@ Many lessons were learned throughout the development of this project. I estimate
 
 ## Other Notes
 
-The [UE4 Forums](https://forums.unrealengine.com/) were an invaluable resource throughout both for code snippets and resolving bugs.
+The [UE4 Forums](https://forums.unrealengine.com/) were an invaluable resource throughout both for code snippets and resolving bugs. Although I did my best to give the most terse description I could of the major systems of the project there is stil alot I'm leaving out.
