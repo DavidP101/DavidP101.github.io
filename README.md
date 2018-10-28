@@ -94,3 +94,7 @@ The character meshes and the majority of animations were sourced from [Mixamo](h
 ## Audio
 
 The majority of the audio was sourced from [BBC Sound Effects](http://bbcsfx.acropolis.org.uk/). Audio for the UI was sourced from the [Content Examples](https://docs.unrealengine.com/en-us/Resources/ContentExamples). The audio for the footsteps was sourced from the [Couch Knights Demo](https://www.unrealengine.com/marketplace/couch-knights).
+
+## Lessons Learned
+
+Many lessons were learned throughout the development of this project. I estimate the project took me somewhere in the range of 4-5 months to complete and was very steep learning curve. All in all, scope was the major challenge. At the beginning of the project I didn't know how big I wanted the project to be or in fact where exactly I wanted to go with it. As I continued development I changed ideas many times over, some by choice, some due to lack of expertise on my part. If I had my time over to do it again I would have done something much smaller and focused, something in the nature of a weeks instead of a few months. Another major problem I encountered was best practises, being a novice game developer it was very difficult to know if the solutions I completed were actually done in a logical and somewhat efficient way. In fact, in the earlier stages of the project I would estimate 2-3 weeks was spent on the whiteboard trying to figure out the best solutions to problems. It wasn't until I took a more laissez-faire approach and allowed myself to fail that I actually made progress.
