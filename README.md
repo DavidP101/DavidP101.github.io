@@ -47,8 +47,11 @@ The dialogue system is not true branching dialogue but a data table approach whe
 
 ### Quest System
 ----------------
+![inventory](/images/quests.png)
 
 ### Inventory System
+--------------------
+![inventory](/images/inventory.png)
 
 ## Environment
 --------------
