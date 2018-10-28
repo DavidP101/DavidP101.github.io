@@ -45,6 +45,7 @@ Whenever the volume around the player comes into contact with an interactable it
 * A number of actors are involved in the cycle including the sky sphere, directional light, and sky light. To drive various values associated with each (in particular the directional light) 0-1 curves were created e.g a curve to update the directional light's colour, another curve to update intensity and so on.
 * I then made a timeline to drive an alpha curve where the resulting value would be fed into each of the curves above.
 * Hourly/minute updates are broadcasted by means of a delegate to any actors across the project that are interested (e.g. street lights).
+
 ### Dialogue System
 
 ![Dialogue01](/images/dialogue01.png)
@@ -58,7 +59,8 @@ The above picture shows the less advanced dialogue, a string array of responses 
 
 ### Quest System
 
-![inventory](/images/quests.png)
+![quest01](/images/quests.png)
+![quest02](/images/questui.png)
 
 A questline actor exists in the world which stores two arrays: 'Active Quests' and 'Completed Quests'. On my player controller I keep an active quest index variable which remembers which quest I'm following. When a quest is chosen, the objective marker (if there is any) is updated. When we get to the last objective in a quest, it's taken out of the active quests array and moved to the completed quests array.
 
