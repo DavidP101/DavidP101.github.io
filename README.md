@@ -8,8 +8,8 @@ Hello there. My name's David, I'm 23 years old, and I hail from Ireland.
 
 ## Overview
 -----------
-From a young age I've loved to play RPGs and it's remained my favourite genre of game throughout my life. Being an aspiring Game Dev I naturally gravitated towards this genre and wanted to try my hand at creating some RPG mechanics (listed below). The premise for this project is that the player is situated on an island and is helping the local islanders in preparation for a small fireworks display. The player helps the islanders by completing quests; these quests are then fulfilled by interacting with various actors throughout the world (through dialogue or by standard methods).
-I encountered a good few challenges along the way and will discuss these in my Lessons Learned section. What follows here is a list of the main features in the project and a basic description of each.
+From a young age I've loved to play RPGs and it's remained my favourite genre of game throughout my life. Being an aspiring Game Dev I naturally gravitated towards this genre and wanted to try my hand at creating some RPG mechanics. The premise for this project is that the player is situated on an island and is helping the local islanders in preparation for a small fireworks display. The player helps the islanders by completing quests; these quests are fulfilled by interacting with various actors throughout the world.
+I encountered challenges along the way and will discuss these in my lessons learned section. What follows here is a list of the main features in the project and a very basic description of each.
 
 ## Gameplay Features
 --------------------
@@ -35,12 +35,15 @@ To create an actor that's capable of interaction: I first changed the collision 
 #### Method
 
 * An actor was created to house the logic called 'DayNightCycle'.
-* A number of actors are involved in the cycle including the sky sphere, directional light, and sky light. To update these values in a maintainable way I decided to create 0-1 curves for each.
+* A number of actors are involved in the cycle including the sky sphere, directional light, and sky light. To drive various values associated with each (in particular the directional light) 0-1 curves were created e.g a curve to update the directional light's colour, another curve to update intensity and so on.
 * I then made a timeline to drive an alpha curve where the resulting value would be fed into each of the curves above.
 * Hourly/Minute updates are broadcasted by means of a delegate to any actors across the project that are interested (e.g. street lights).
 
 ### Dialogue System
 -------------------
+![Dialogue01](/images/dialogue01.png)
+The dialogue system is not true branching dialogue but a data table approach whereby the player has a string array of responses, and the AI has an array of responses. If the player selects an option that appears in let's say row 0 column 0, I will then fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate Outcomes datatable for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
+
 
 ### Quest System
 ----------------
