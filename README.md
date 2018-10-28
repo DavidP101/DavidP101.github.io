@@ -45,13 +45,14 @@ Whenever the volume around the player comes into contact with an interactable it
 * An actor was created to house the logic called 'DayNightCycle'.
 * A number of actors are involved in the cycle including the sky sphere, directional light, and sky light. To drive various values associated with each (in particular the directional light) 0-1 curves were created e.g a curve to update the directional light's colour, another curve to update intensity and so on.
 * I then made a timeline to drive an alpha curve where the resulting value would be fed into each of the curves above.
-* Hourly/Minute updates are broadcasted by means of a delegate to any actors across the project that are interested (e.g. street lights).
-
+* Hourly/minute updates are broadcasted by means of a delegate to any actors across the project that are interested (e.g. street lights).
 ### Dialogue System
 
 ![Dialogue01](/images/dialogue01.png)
-Any actor that is capable of dialogue has a dialogue component, in here I have variables that house data tables for quest dialogue and non-quest dialogue.
-The dialogue system is not true branching dialogue but a data table approach whereby the player has a string array of responses, and the AI has an array of responses. If the player selects an option that appears in let's say row 0 column 0, I will then fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate outcomes datatable for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
+
+Any actor that is capable of dialogue has a dialogue component, in here I have variables that store data tables for quest dialogue and non-quest dialogue.
+The dialogue system is not true branching dialogue but a data table approach whereby the player have string arrays of responses. If the player selects an option that appears in let's say row 0 column 0, it will then fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate outcomes data table for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
+
 ![Dialogue02](/images/casualdialogue.png)
 The above picture shows the less advanced dialogue, a string array of responses is housed in the dialogue component, a random one is chosen, sent to the UI and exposed to the user.
 
