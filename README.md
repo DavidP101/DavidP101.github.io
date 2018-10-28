@@ -32,7 +32,7 @@ To create an actor that's capable of interaction:
 * I first changed the collision type on one of the actor's static mesh components (if the actor did not have a static mesh component I created a volume instead and applied it to that).
 * Following this, I then implemented the Interactable interface and provided my definitions for Interact and Exit Interact.
 
-Whenever the volume around the player comes into contact with an interactable it then adds it to a potential interactable array and the best one is chosen by means of a dot product with the player's camera.
+Whenever the volume around the player comes into contact with an interactable it then adds it to a potential interactables array and the best one is chosen by means of a dot product with the player's camera.
 
 ### Day-Night Cycle
 
@@ -51,16 +51,21 @@ Whenever the volume around the player comes into contact with an interactable it
 ![Dialogue01](/images/dialogue01.png)
 
 Any actor that is capable of dialogue has a dialogue component, in here I have variables that store data tables for quest dialogue and non-quest dialogue.
-The dialogue system is not true branching dialogue but a data table approach whereby the player have string arrays of responses. If the player selects an option that appears in let's say row 0 column 0, it will then fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate outcomes data table for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
+The dialogue system is not true branching dialogue but a data table approach whereby the player and AI have string arrays of responses. If the player selects an option that appears in let's say row 0 column 0 of the array then on the next row of the data table it will fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate outcomes data table for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
 
 ![Dialogue02](/images/casualdialogue.png)
-The above picture shows the less advanced dialogue, a string array of responses is housed in the dialogue component, a random one is chosen, sent to the UI and exposed to the user.
+The above picture shows the less advanced dialogue, a string array of responses is housed in the dialogue component, a random string is chosen, sent to the UI, and exposed to the user for a set number of seconds.
 
 ### Quest System
 
 ![inventory](/images/quests.png)
 
-A questline actor exists in the world which houses two arrays: 'Active Quests' and 'Completed Quests'. On my player controller I keep an active quest index variable which remembers which quest I'm following. When a quest is chosen, the objective marker (if there is any changes). When we get to the last objective in a quest, it's taken out of the active quests array and moved to the completed quests array.
+A questline actor exists in the world which stores two arrays: 'Active Quests' and 'Completed Quests'. On my player controller I keep an active quest index variable which remembers which quest I'm following. When a quest is chosen, the objective marker (if there is any) is updated. When we get to the last objective in a quest, it's taken out of the active quests array and moved to the completed quests array.
+
+The quests of the game are stored inside a data table, a quest structure was made to represent each quest. Every quest has an array of objectives, a stage to represent where we are in the quest, and a name among other UI related variables.
+Each objective in the objectives array is also represented by a structure. This structure among the UI related variables also has a stage, and a string for an event name.
+After each objective is complete we see if there's any event by this name in the questline actor and execute it if it exists. This way allows us to add items to the player after a quest has finished or provide other custom behaviour idiosyncratic to that quest.
+
 
 ### Inventory System
 
