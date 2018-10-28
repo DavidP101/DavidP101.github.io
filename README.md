@@ -27,8 +27,8 @@ I encountered challenges along the way and will discuss these in my lessons lear
 * Made sphere collision volume on player character that only does checks for the above channel.
 * An interface also called 'Interactable' was built with two methods: 'Interact' and 'Exit Interact'.
 
-#### Method
 To create an actor that's capable of interaction:
+
 * I first changed the collision type on one of the actor's static mesh components (if the actor did not have a static mesh component I created a volume instead and applied it to that).
 * Following this, I then implemented the Interactable interface and provided my definitions for Interact and Exit Interact.
 
@@ -39,8 +39,6 @@ Whenever the volume around the player comes into contact with an interactable it
 ![Dawn](/images/dawntime.png)
 ![Day](/images/daytime.png)
 ![Night](/images/nighttime.png)
-
-#### Method
 
 * An actor was created to house the logic called 'DayNightCycle'.
 * A number of actors are involved in the cycle including the sky sphere, directional light, and sky light. To drive various values associated with each (in particular the directional light) 0-1 curves were created e.g a curve to update the directional light's colour, another curve to update intensity and so on.
@@ -54,6 +52,7 @@ Any actor that is capable of dialogue has a dialogue component, in here I have v
 The dialogue system is not true branching dialogue but a data table approach whereby the player and AI have string arrays of responses. If the player selects an option that appears in let's say row 0 column 0 of the array then on the next row of the data table it will fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate outcomes data table for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
 
 ![Dialogue02](/images/casualdialogue.png)
+
 The above picture shows the less advanced dialogue, a string array of responses is housed in the dialogue component, a random string is chosen, sent to the UI, and exposed to the user for a set number of seconds.
 
 ### Quest System
