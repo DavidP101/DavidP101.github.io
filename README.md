@@ -24,7 +24,11 @@ I encountered challenges along the way and will discuss these in my lessons lear
 * An interface also called 'Interactable' was built with two methods: 'Interact' and 'Exit Interact'.
 
 #### Method
-To create an actor that's capable of interaction: I first changed the collision type on one of the actor's static mesh components (if the actor did not have a static mesh component I created a volume instead and applied it to that). Following this, I then implemented the Interactable interface and provided my definitions for Interact and Exit Interact.
+To create an actor that's capable of interaction:
+* I first changed the collision type on one of the actor's static mesh components (if the actor did not have a static mesh component I created a volume instead and applied it to that).
+* Following this, I then implemented the Interactable interface and provided my definitions for Interact and Exit Interact.
+
+Whenever the volume around the player comes into contact with an interactable it then adds it to a potential interactable array and the best one is chosen by means of a dot product with the player's camera.
 
 ### Day-Night Cycle
 -------------------
@@ -43,15 +47,20 @@ To create an actor that's capable of interaction: I first changed the collision 
 -------------------
 ![Dialogue01](/images/dialogue01.png)
 The dialogue system is not true branching dialogue but a data table approach whereby the player has a string array of responses, and the AI has an array of responses. If the player selects an option that appears in let's say row 0 column 0, I will then fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate Outcomes datatable for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
+![Dialogue02](/images/casualdialogue.png)
 
 
 ### Quest System
 ----------------
 ![inventory](/images/quests.png)
 
+
+
 ### Inventory System
 --------------------
 ![inventory](/images/inventory.png)
+
+The inventory follows a slot based approach. A structure was made to represent an inventory item, any actors that wish to become an inventory item can add an inventory component where a structure variable is exposed to editing. In here we can add a custom icon, the class, if the actor is equippable or a quest item etc.
 
 ## Environment
 --------------
@@ -85,3 +94,11 @@ The character meshes and the majority of animations were sourced from [Mixamo](h
 ## Audio
 
 The majority of the audio was sourced from [BBC Sound Effects](http://bbcsfx.acropolis.org.uk/). Audio for the UI was sourced from the [Content Examples](https://docs.unrealengine.com/en-us/Resources/ContentExamples). The audio for the footsteps was sourced from the [Couch Knights Demo](https://www.unrealengine.com/marketplace/couch-knights).
+
+## Lessons Learned
+
+Many lessons were learned throughout the development of this project. I estimate it took me somewhere in the range of 4-5 months to complete and was a very steep learning curve. All in all, scope was the major challenge. At the beginning I didn't know how big I wanted the project to be or in fact where exactly I wanted to go with it. As I continued development I changed ideas many times over, some by choice, some due to lack of expertise on my part. If I had my time over to do it again, I would have done something much smaller and focused, something in the nature of a few weeks instead of a few months. Another major problem I encountered was best practises, being a novice game developer it was very difficult to know if the solutions I completed were actually done in a logical and somewhat efficient way. In fact, in the earlier stages of the project I would estimate 2-3 weeks was spent on the whiteboard trying to figure out the best solutions to problems. It wasn't until I took a more laissez-faire approach and allowed myself to fail that I actually made progress. I had a self-imposed deadline at the end of July to complete the project, and well, at the time of writing this it is the 28th of October - I realise the importance of organisation now and keeping a tight schedule. Although certain parts of the development were stressful, I still thoroughly enjoyed the process and am looking forward to doing it again.
+
+## Other Notes
+
+The [UE4 Forums](https://forums.unrealengine.com/) were an invaluable resource throughout both for code snippets and resolving bugs.
