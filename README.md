@@ -1,5 +1,5 @@
 # Game Dev Portfolio
---------------------
+
 ![Night time scene](/images/nighttower.png)
 
 ## Executable Link
@@ -7,19 +7,19 @@
 Here is a link to the executable for the project. The code base is available on github to browse through.
 
 ## About Me
------------
+
 Hello there. My name's David, I'm 23 years old, and I hail from Ireland.
 
 ## Overview
------------
+
 From a young age I've loved to play RPGs and it's remained my favourite genre of game throughout my life. Being an aspiring Game Dev I naturally gravitated towards this genre and wanted to try my hand at creating some RPG mechanics. The premise for this project is that the player is situated on an island and is helping the local islanders in preparation for a small fireworks display. The player helps the islanders by completing quests; these quests are fulfilled by interacting with various actors throughout the world.
 I encountered challenges along the way and will discuss these in my lessons learned section. What follows here is a list of the main features in the project and a very basic description of each.
 
 ## Gameplay Features
---------------------
+
 
 ### Interaction System
-----------------------
+
 ![Interaction](/images/interaction.png)
 
 #### Setup
@@ -35,7 +35,7 @@ To create an actor that's capable of interaction:
 Whenever the volume around the player comes into contact with an interactable it then adds it to a potential interactable array and the best one is chosen by means of a dot product with the player's camera.
 
 ### Day-Night Cycle
--------------------
+
 ![Dawn](/images/dawntime.png)
 ![Day](/images/daytime.png)
 ![Night](/images/nighttime.png)
@@ -48,7 +48,7 @@ Whenever the volume around the player comes into contact with an interactable it
 * Hourly/Minute updates are broadcasted by means of a delegate to any actors across the project that are interested (e.g. street lights).
 
 ### Dialogue System
--------------------
+
 ![Dialogue01](/images/dialogue01.png)
 Any actor that is capable of dialogue has a dialogue component, in here I have variables that house data tables for quest dialogue and non-quest dialogue.
 The dialogue system is not true branching dialogue but a data table approach whereby the player has a string array of responses, and the AI has an array of responses. If the player selects an option that appears in let's say row 0 column 0, I will then fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate outcomes datatable for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
@@ -56,40 +56,40 @@ The dialogue system is not true branching dialogue but a data table approach whe
 The above picture shows the less advanced dialogue, a string array of responses is housed in the dialogue component, a random one is chosen, sent to the UI and exposed to the user.
 
 ### Quest System
-----------------
+
 ![inventory](/images/quests.png)
 
 A questline actor exists in the world which houses two arrays: 'Active Quests' and 'Completed Quests'. On my player controller I keep an active quest index variable which remembers which quest I'm following. When a quest is chosen, the objective marker (if there is any changes). When we get to the last objective in a quest, it's taken out of the active quests array and moved to the completed quests array.
 
 ### Inventory System
---------------------
+
 ![inventory](/images/inventory.png)
 
 The inventory follows a slot based approach. A structure was made to represent an inventory item, any actors that wish to become an inventory item can add an inventory component where a structure variable is exposed to editing. In here we can add a custom icon, the class, if the actor is equippable or a quest item etc.
 
 ## Environment
---------------
+
 
 ### Trees
----------
+
 I created my trees using the methods outlined in the tutorials below. However, to provide a quick summary: The bark/branch shape is created by joining vertices. Skin, subdivide and decimate modifiers are then applied. The leaves of the tree are made by intersecting planes. Each plane has a texture mapped to it. I used a mask I found off a UDK documentation page, which is also linked below.
 
 #### References:
-----------------
+
 1. [Bark creation](https://www.youtube.com/watch?v=wB0VgyN8tOw)
 1. [Tree creation](https://www.youtube.com/watch?v=_Br6Xq4LZcI)
 1. [Leaf mask](https://api.unrealengine.com/udk/Three/rsrc/Three/SoftMasked/GoodLeafMask.jpg)
 
 ### Grass
---------------
+
 A mask was created inside MS Paint and then applied to 5-6 planes in blender. These planes were then intersected with one another and imported into UE4.
 
 ### Flowers
---------------
+
 The flowers were created much the same way as the grass, except I used textures sourced from a [Udemy Blender Course](https://www.udemy.com/blendertutorial/).
 
 ### Landscape
---------------
+
 The landscape was designed using the Landscape Tool. A number of textures were sourced from the [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs) including grass, dirt, stone, water, and among others to provide some noise and variation.
 
 ## Characters
