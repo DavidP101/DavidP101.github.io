@@ -43,6 +43,7 @@ To create an actor that's capable of interaction: I first changed the collision 
 -------------------
 ![Dialogue01](/images/dialogue01.png)
 The dialogue system is not true branching dialogue but a data table approach whereby the player has a string array of responses, and the AI has an array of responses. If the player selects an option that appears in let's say row 0 column 0, I will then fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate Outcomes datatable for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
+![Dialogue02](/images/casualdialogue.png)
 
 
 ### Quest System
