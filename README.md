@@ -46,9 +46,10 @@ Whenever the volume around the player comes into contact with an interactable it
 ### Dialogue System
 -------------------
 ![Dialogue01](/images/dialogue01.png)
-The dialogue system is not true branching dialogue but a data table approach whereby the player has a string array of responses, and the AI has an array of responses. If the player selects an option that appears in let's say row 0 column 0, I will then fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate Outcomes datatable for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
+Any actor that is capable of dialogue has a dialogue component, in here I have variables that house data tables for quest dialogue and non-quest dialogue.
+The dialogue system is not true branching dialogue but a data table approach whereby the player has a string array of responses, and the AI has an array of responses. If the player selects an option that appears in let's say row 0 column 0, I will then fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate outcomes datatable for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
 ![Dialogue02](/images/casualdialogue.png)
-
+The above picture shows the less advanced dialogue, a string array of responses is housed in the dialogue component, a random one is chosen, sent to the UI and exposed to the user.
 
 ### Quest System
 ----------------
