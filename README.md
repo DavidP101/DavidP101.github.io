@@ -24,7 +24,11 @@ I encountered challenges along the way and will discuss these in my lessons lear
 * An interface also called 'Interactable' was built with two methods: 'Interact' and 'Exit Interact'.
 
 #### Method
-To create an actor that's capable of interaction: I first changed the collision type on one of the actor's static mesh components (if the actor did not have a static mesh component I created a volume instead and applied it to that). Following this, I then implemented the Interactable interface and provided my definitions for Interact and Exit Interact.
+To create an actor that's capable of interaction:
+* I first changed the collision type on one of the actor's static mesh components (if the actor did not have a static mesh component I created a volume instead and applied it to that).
+* Following this, I then implemented the Interactable interface and provided my definitions for Interact and Exit Interact.
+
+Whenever the volume around the player comes into contact with an interactable it then adds it to a potential interactable array and the best one is chosen by means of a dot product with the player's camera.
 
 ### Day-Night Cycle
 -------------------
