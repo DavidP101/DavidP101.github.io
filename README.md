@@ -28,7 +28,17 @@ To create an actor that's capable of interaction: I first changed the collision 
 
 ### Day-Night Cycle
 -------------------
+![Dawn](/images/dawntime.png)
 ![Day](/images/daytime.png)
+![Night](/images/nighttime.png)
+
+#### Method
+
+* An actor was created to house the logic called 'DayNightCycle'.
+* A number of actors are involved in the cycle including the sky sphere, directional light, and sky light. To update these values in a maintainable way I decided to create 0-1 curves for each.
+* I then made a timeline to drive an alpha curve where the resulting value would be fed into each of the curves above.
+* Hourly/Minute updates are broadcasted by means of a delegate to any actors across the project that are interested (e.g. street lights).
+
 ### Dialogue System
 -------------------
 
@@ -61,3 +71,11 @@ The flowers were created much the same way as the grass, except I used textures 
 ### Landscape
 --------------
 The landscape was designed using the Landscape Tool. A number of textures were sourced from the [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs) including grass, dirt, stone, water, and among others to provide some noise and variation.
+
+## Characters
+
+The character meshes and the majority of animations were sourced from [Mixamo](https://www.mixamo.com/#/). All remaining animations were sourced from [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs).
+
+## Audio
+
+The majority of the audio was sourced from [BBC Sound Effects](http://bbcsfx.acropolis.org.uk/). Audio for the UI was sourced from the [Content Examples](https://docs.unrealengine.com/en-us/Resources/ContentExamples). The audio for the footsteps was sourced from the [Couch Knights Demo](https://www.unrealengine.com/marketplace/couch-knights).
