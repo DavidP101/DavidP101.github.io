@@ -59,8 +59,12 @@ A mask was created inside MS Paint and then applied to 5-6 planes in blender. Th
 
 ### Flowers
 --------------
-The flowers were created much the same way as the grass, except I used textures sourced from a Udemy Blender Course.
+The flowers were created much the same way as the grass, except I used textures sourced from a [Udemy Blender Course](https://www.udemy.com/blendertutorial/).
 
 ### Landscape
 --------------
 The landscape was designed using the Landscape Tool. A number of textures were sourced from the [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs) including grass, dirt, stone, water, and among others to provide some noise and variation.
+
+## Characters
+
+The character meshes and the majority of animations were sourced from [Mixamo](https://www.mixamo.com/#/). All remaining animations were sourced from [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs).
