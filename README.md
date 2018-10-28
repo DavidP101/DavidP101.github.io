@@ -54,9 +54,13 @@ The dialogue system is not true branching dialogue but a data table approach whe
 ----------------
 ![inventory](/images/quests.png)
 
+
+
 ### Inventory System
 --------------------
 ![inventory](/images/inventory.png)
+
+The inventory follows a slot based approach. A structure was made to represent an inventory item, any actors that wish to become an inventory item can add an inventory component where a structure variable is exposed to editing. In here we can add a custom icon, the class, if the actor is equippable or a quest item etc.
 
 ## Environment
 --------------
