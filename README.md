@@ -75,3 +75,7 @@ The landscape was designed using the Landscape Tool. A number of textures were s
 ## Characters
 
 The character meshes and the majority of animations were sourced from [Mixamo](https://www.mixamo.com/#/). All remaining animations were sourced from [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs).
+
+## Audio
+
+The majority of the audio was sourced from [BBC Sound Effects](http://bbcsfx.acropolis.org.uk/). Audio for the UI was sourced from the [Content Examples](https://docs.unrealengine.com/en-us/Resources/ContentExamples). The audio for the footsteps was sourced from the [Couch Knights Demo](https://www.unrealengine.com/marketplace/couch-knights).
