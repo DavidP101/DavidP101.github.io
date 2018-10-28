@@ -32,6 +32,13 @@ To create an actor that's capable of interaction: I first changed the collision 
 ![Day](/images/daytime.png)
 ![Night](/images/nighttime.png)
 
+#### Method
+
+* An actor was created to house the logic called 'DayNightCycle'.
+* A number of actors are involved in the cycle including the sky sphere, directional light, and sky light. To update these values in a maintainable way I decided to create 0-1 curves for each.
+* I then made a timeline to drive an alpha curve where the resulting value would be fed into each of the curves above.
+* Hourly/Minute updates are broadcasted by means of a delegate to any actors across the project that are interested (e.g. street lights).
+
 ### Dialogue System
 -------------------
 
