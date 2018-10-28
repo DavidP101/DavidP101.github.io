@@ -8,11 +8,11 @@ Here is a link to the executable for the project. The code base is available on 
 
 ## About Me
 
-Hello there. My name's David, I'm 23 years old, and I hail from Ireland.
+Hello there. My name's David, I'm 23 years old, and I hail from Ireland. I graduated from a Computer Science degree in 2017, and ever since then I've been learning UE4, dipping my foot into Blender and have been working on a portfolio.
 
 ## Overview
 
-From a young age I've loved to play RPGs and it's remained my favourite genre of game throughout my life. Being an aspiring Game Dev I naturally gravitated towards this genre and wanted to try my hand at creating some RPG mechanics. The premise for this project is that the player is situated on an island and is helping the local islanders in preparation for a small fireworks display. The player helps the islanders by completing quests; these quests are fulfilled by interacting with various actors throughout the world.
+From a young age I've loved to play RPGs and it's remained my favourite genre of game throughout my life. Being an aspiring game dev I naturally gravitated towards this genre and wanted to try my hand at creating some RPG mechanics. The premise for this project is that the player is situated on an island and is helping the local islanders in preparation for a small fireworks display. The player helps the islanders by completing quests; these quests are fulfilled by interacting with various actors throughout the world.
 I encountered challenges along the way and will discuss these in my lessons learned section. What follows here is a list of the main features in the project and a very basic description of each.
 
 ## Gameplay Features
