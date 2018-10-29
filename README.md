@@ -81,6 +81,8 @@ The inventory follows a slot based approach. A structure was made to represent a
 
 ### Trees
 
+![daytimetreefs](/images/daytimetrees.png)
+
 I created my trees using the methods outlined in the tutorials below. However, to provide a quick summary: The bark/branch shape is created by joining vertices. Skin, subdivide and decimate modifiers are then applied. The leaves of the tree are made by intersecting planes. Each plane has a texture mapped to it. I used a mask I found off a UDK documentation page, which is also linked below.
 
 #### References:
