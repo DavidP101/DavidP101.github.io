@@ -4,7 +4,7 @@
 
 ## Executable Link
 
-Here is a link to the executable for the project. The code base is available on github to browse through.
+Here is a link to a .zip file containing the executable. The code base is available on github to browse through.
 
 ## About Me
 
