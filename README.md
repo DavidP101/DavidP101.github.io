@@ -8,7 +8,7 @@ Here is a link to a .zip file containing the executable. The code base is availa
 
 ## About Me
 
-Hello there. My name's David, I'm 23 years old, and I hail from Ireland. I graduated from a Computer Science degree in 2017, and ever since then I've been learning UE4, dipping my foot into Blender working on a portfolio.
+Hello there. My name's David, I'm 23 years old, and I hail from Ireland. I graduated from a Computer Science degree in 2017, and ever since then I've been learning UE4, dipping my foot into Blender, and working on a portfolio.
 
 ## Overview
 
