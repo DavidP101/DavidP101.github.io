@@ -8,7 +8,7 @@ Here is a link to the executable for the project. The code base is available on 
 
 ## About Me
 
-Hello there. My name's David, I'm 23 years old, and I hail from Ireland. I graduated from a Computer Science degree in 2017, and ever since then I've been learning UE4, dipping my foot into Blender and have been working on a portfolio.
+Hello there. My name's David, I'm 23 years old, and I hail from Ireland. I graduated from a Computer Science degree in 2017, and ever since then I've been learning UE4, dipping my foot into Blender working on a portfolio.
 
 ## Overview
 
@@ -59,10 +59,10 @@ The above picture shows the less advanced dialogue, a string array of responses 
 
 ### Quest System
 
-![quest01](/images/quests.png)
 ![quest02](/images/questui.png)
+![quest01](/images/quests.png)
 
-A questline actor exists in the world which stores two arrays: 'Active Quests' and 'Completed Quests'. On my player controller I keep an active quest index variable which remembers which quest I'm following. When a quest is chosen, the objective marker (if there is any) is updated. When we get to the last objective in a quest, it's taken out of the active quests array and moved to the completed quests array.
+A questline actor exists in the world which stores two arrays: 'ActiveQuests' and 'CompletedQuests'. On my player controller I keep an active quest index variable which remembers which quest I'm following. When a quest is chosen, the objective marker (if there is any) is updated. When we get to the last objective in a quest, it's taken out of the ActiveQuests array and moved to the CompletedQuests array.
 
 The quests of the game are stored inside a data table, a quest structure was made to represent each quest. Every quest has an array of objectives, a stage to represent where we are in the quest, and a name among other UI related variables.
 Each objective in the objectives array is also represented by a structure. This structure among the UI related variables also has a stage, and a string for an event name.
@@ -74,12 +74,14 @@ After each objective is complete we see if there's any event by this name in the
 
 ![inventory](/images/inventory.png)
 
-The inventory follows a slot based approach. A structure was made to represent an inventory item, and any actors that wish to become an inventory item can add an inventory component where a structure variable is exposed to editing. In here we can add a custom icon, the class, if the actor is equippable or a quest item etc.
+The inventory follows a slot based approach. A structure was made to represent an inventory item. Any actors that wish to become an inventory item can add an inventory component to their hierarchy where a structure variable is exposed to editing. In here we can add a custom icon, the class, if the actor is equippable, or if the actor is a quest item. A blueprint interface called 'Useable' was made so that actors can provide their own definitions for how they're interacted with inside the inventory. For example, the helmet in the picture will be equipped when clicked on, while the dye (represent by the pink cylinder) will turn the player's shirt to a random colour.
 
 ## Environment
 
 
 ### Trees
+
+![daytimetrees](/images/daytimetrees.png)
 
 I created my trees using the methods outlined in the tutorials below. However, to provide a quick summary: The bark/branch shape is created by joining vertices. Skin, subdivide and decimate modifiers are then applied. The leaves of the tree are made by intersecting planes. Each plane has a texture mapped to it. I used a mask I found off a UDK documentation page, which is also linked below.
 
