@@ -59,8 +59,8 @@ The above picture shows the less advanced dialogue, a string array of responses 
 
 ### Quest System
 
-![quest01](/images/quests.png)
 ![quest02](/images/questui.png)
+![quest01](/images/quests.png)
 
 A questline actor exists in the world which stores two arrays: 'ActiveQuests' and 'CompletedQuests'. On my player controller I keep an active quest index variable which remembers which quest I'm following. When a quest is chosen, the objective marker (if there is any) is updated. When we get to the last objective in a quest, it's taken out of the active quests array and moved to the completed quests array.
 
