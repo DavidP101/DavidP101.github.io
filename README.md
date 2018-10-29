@@ -62,7 +62,7 @@ The above picture shows the less advanced dialogue, a string array of responses 
 ![quest01](/images/quests.png)
 ![quest02](/images/questui.png)
 
-A questline actor exists in the world which stores two arrays: 'Active Quests' and 'Completed Quests'. On my player controller I keep an active quest index variable which remembers which quest I'm following. When a quest is chosen, the objective marker (if there is any) is updated. When we get to the last objective in a quest, it's taken out of the active quests array and moved to the completed quests array.
+A questline actor exists in the world which stores two arrays: 'ActiveQuests' and 'CompletedQuests'. On my player controller I keep an active quest index variable which remembers which quest I'm following. When a quest is chosen, the objective marker (if there is any) is updated. When we get to the last objective in a quest, it's taken out of the active quests array and moved to the completed quests array.
 
 The quests of the game are stored inside a data table, a quest structure was made to represent each quest. Every quest has an array of objectives, a stage to represent where we are in the quest, and a name among other UI related variables.
 Each objective in the objectives array is also represented by a structure. This structure among the UI related variables also has a stage, and a string for an event name.
@@ -74,7 +74,7 @@ After each objective is complete we see if there's any event by this name in the
 
 ![inventory](/images/inventory.png)
 
-The inventory follows a slot based approach. A structure was made to represent an inventory item. Any actors that wish to become an inventory item can add an inventory component to their hierarchy where a structure variable is exposed to editing. In here we can add a custom icon, the class, if the actor is equippable, or if the actor is a quest item. A blueprint interface called 'Useable' was made so that actors can provide their own definitions for how they're interacted with inside the inventory. For example the helmet in the picture will be equipped when clicked on, while the dye (represent by the pink cylinder) will turn the player's shirt to a random colour.
+The inventory follows a slot based approach. A structure was made to represent an inventory item. Any actors that wish to become an inventory item can add an inventory component to their hierarchy where a structure variable is exposed to editing. In here we can add a custom icon, the class, if the actor is equippable, or if the actor is a quest item. A blueprint interface called 'Useable' was made so that actors can provide their own definitions for how they're interacted with inside the inventory. For example, the helmet in the picture will be equipped when clicked on, while the dye (represent by the pink cylinder) will turn the player's shirt to a random colour.
 
 ## Environment
 
