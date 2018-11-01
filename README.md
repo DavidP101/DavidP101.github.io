@@ -95,6 +95,10 @@ The flowers were created much the same way as the grass, except I used textures 
 
 The landscape was designed using the Landscape Tool. A number of textures were sourced from the [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs) including grass, dirt, stone, water, and among others to provide some noise and variation.
 
+### Water
+
+Water was created by following parts of [this](https://wiki.unrealengine.com/Water_Shader_Tutorial) tutorial.
+
 ## Characters
 
 The character meshes and the majority of animations were sourced from [Mixamo](https://www.mixamo.com/#/). All remaining animations were sourced from [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs).
