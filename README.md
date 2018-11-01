@@ -4,11 +4,11 @@
 
 ## Executable Link
 
-[Here](https://drive.google.com/open?id=1DN9UzSKwuknAhUOBqpwB8aVnljYtBMmg) is a link to a .zip file containing the executable. The code base is available on github to browse through.
+[Here](https://drive.google.com/open?id=1_keTpHczPYsHIKqk5v1NsBZZKpkUjGkT) is a link to a .zip file containing the executable. The code base is available on github to browse through.
 
 ## About Me
 
-Hello there. My name's David, I'm 23 years old, and I hail from Ireland. I graduated from a Computer Science degree in 2017, and ever since then I've been learning UE4, dipping my foot into Blender, and working on a portfolio.
+Hello there. My name's David, I'm 23 years old, and I hail from Ireland. I graduated from a Computer Science degree in 2017, and ever since then I've been learning UE4, gaining competence in Blender, and working on a portfolio.
 
 ## Overview
 
