@@ -99,6 +99,10 @@ The landscape was designed using the Landscape Tool. A number of textures were s
 
 Water was created by following parts of [this](https://wiki.unrealengine.com/Water_Shader_Tutorial) tutorial.
 
+### Rocks
+
+I followed [this](https://www.youtube.com/watch?v=BeO7ZZPLeKA) tutorial to make the low-poly rocks. I utilised the same sort of work-flow to also create the cave.
+
 ## Characters
 
 The character meshes and the majority of animations were sourced from [Mixamo](https://www.mixamo.com/#/). All remaining animations were sourced from [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs).
