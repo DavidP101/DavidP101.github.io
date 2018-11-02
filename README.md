@@ -12,8 +12,7 @@ Hello there. My name's David, I'm 23 years old, and I hail from Ireland. I gradu
 
 ## Overview
 
-From a young age I've loved to play RPGs and it's remained my favourite genre of game throughout my life. Being an aspiring game dev I naturally gravitated towards this genre and wanted to try my hand at creating some RPG mechanics. The premise for this project is that the player is situated on an island and is helping the local islanders in preparation for a small fireworks display. The player helps the islanders by completing quests; these quests are fulfilled by interacting with various actors throughout the world.
-I encountered challenges along the way and will discuss these in my lessons learned section. What follows here is a list of the main features in the project and a very basic description of each.
+From a young age I've loved to play RPGs and it's remained my favourite genre of game throughout my life. Being an aspiring game dev I naturally gravitated towards this genre and wanted to try my hand at creating some RPG mechanics. The premise for this project is that the player is situated on an island and is helping the local islanders in preparation for a small fireworks display. The player helps the islanders by completing quests; these quests are fulfilled by interacting with various actors throughout the world. I encountered challenges along the way and will discuss these in my lessons learned section. What follows here is a list of the main features in the project and a very basic description of each.
 
 ## Gameplay Features
 
@@ -22,9 +21,7 @@ I encountered challenges along the way and will discuss these in my lessons lear
 
 ![Interaction](/images/interaction.png)
 
-* Created custom collision channel in project settings called 'Interactable'.
-* Made sphere collision volume on player character that only does checks for the above channel.
-* An interface also called 'Interactable' was built with two methods: 'Interact' and 'Exit Interact'.
+Inside my project settings I created a custom collision channel in my project settings called 'Interactable'. Next inside my player character I made a sphere collision volume that only does checks for the above channel. An interface also called 'Interactable' was built with two methods: 'Interact' and 'Exit Interact'.
 
 To create an actor that's capable of interaction I first changed the collision type on one of the actor's static mesh components (if the actor did not have a static mesh component I created a volume instead and applied it to that). Following this, I then implemented the Interactable interface and provided my definitions for Interact and Exit Interact.
 
