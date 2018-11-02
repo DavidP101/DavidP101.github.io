@@ -21,11 +21,11 @@ From a young age I've loved to play RPGs and it's remained my favourite genre of
 
 ![Interaction](/images/interaction.png)
 
-Inside my project settings I created a custom collision channel in my project settings called 'Interactable'. Next inside my player character I made a sphere collision volume that only does checks for the above channel. An interface also called 'Interactable' was built with two methods: 'Interact' and 'Exit Interact'.
+Inside my project settings I created a custom collision channel called 'Interactable'. Next, inside my player character I made a sphere collision volume that only does checks for the above channel. An interface also called 'Interactable' was built with two methods: 'Interact' and 'Exit Interact'.
 
 To create an actor that's capable of interaction I first changed the collision type on one of the actor's static mesh components (if the actor did not have a static mesh component I created a volume instead and applied it to that). Following this, I then implemented the Interactable interface and provided my definitions for Interact and Exit Interact.
 
-Whenever the volume around the player comes into contact with an interactable it then adds it to a potential interactables array and the best one is chosen by means of a dot product with the player's camera. I used [this](https://www.youtube.com/watch?v=JDrdfCyujJE&index=1&list=PL5ADyRqL3M8HZru3SHTWF_iL28V25WaIp) tutorial for reference while making this sytem.
+Whenever the volume around the player comes into contact with an interactable, it then adds it to a potential interactables array and the best one is chosen by means of a dot product with the player's camera. I used [this](https://www.youtube.com/watch?v=JDrdfCyujJE&index=1&list=PL5ADyRqL3M8HZru3SHTWF_iL28V25WaIp) tutorial for reference while making this sytem.
 
 ### Day-Night Cycle
 
@@ -39,7 +39,7 @@ An actor was created to house the logic called 'DayNightCycle'. A number of acto
 
 ![Dialogue01](/images/dialogue01.png)
 
-Any actor that is capable of dialogue has a dialogue component. In here I have variables that store data tables for quest dialogue and non-quest dialogue.
+Any actor that is capable of dialogue has a dialogue component. In here, I have variables that store data tables for quest dialogue and non-quest dialogue.
 
 The dialogue system is not true branching dialogue (as it's not implemented with a tree structure) but a more basic data table approach. Whenever the player engages in quest dialogue, the dialogue component fetches an array of dialogue structs that coincide with the current stage of the quest from the quest actor's data table. Inside these structs are string arrays of player and npc responses.
 
@@ -66,7 +66,7 @@ After each objective is complete we see if there's any event by this name in the
 
 ![inventory](/images/inventory.png)
 
-The inventory follows a slot based approach. A structure was made to represent an inventory item. Any actors that wish to become an inventory item can add an inventory component to their hierarchy where a structure variable is exposed to editing. In here we can add a custom icon, the class, if the actor is equippable, or if the actor is a quest item. A blueprint interface called 'Useable' was made so that actors can provide their own definitions for how they're interacted with inside the inventory. For example, the helmet in the picture will be equipped when clicked on, while the dye (represent by the pink cylinder) will turn the player's shirt to a random colour.
+The inventory follows a slot based approach. A structure was made to represent an inventory item. Any actors that wish to become an inventory item can add an inventory component to their hierarchy, where a structure variable is exposed to editing. In here we can add a custom icon, the class, if the actor is equippable, or if it is a quest item. A blueprint interface called 'Useable' was made so that actors can provide their own definitions for how they're interacted with inside the inventory. For example, the helmet in the picture will be equipped when clicked on, while the dye (represent by the pink cylinder) will turn the player's shirt to a random colour.
 
 ## Environment
 
@@ -101,11 +101,11 @@ Water was created by following parts of [this](https://wiki.unrealengine.com/Wat
 
 ### Rocks
 
-I followed [this](https://www.youtube.com/watch?v=BeO7ZZPLeKA) tutorial to make the low-poly rocks. I utilised the same sort of work-flow to also create the cave.
+I followed [this](https://www.youtube.com/watch?v=BeO7ZZPLeKA) tutorial to make the low-poly rock mesh. I utilised the same sort of work-flow to also create the cave.
 
 ## Characters
 
-The character meshes and the majority of animations were sourced from [Mixamo](https://www.mixamo.com/#/). All remaining animations were sourced from [UE4 Starter Content](https://docs.unrealengine.com/en-us/Engine/Content/Packs).
+The character meshes and the majority of animations were sourced from [Mixamo](https://www.mixamo.com/#/). All remaining animations were sourced from the UE4 Starter Content.
 
 ## Audio
 
@@ -113,12 +113,18 @@ The majority of the audio was sourced from [BBC Sound Effects](http://bbcsfx.acr
 
 ## Particle & UI
 
-The smoke particle effect was sourced from the UE4 Starter Content, in addition to about half of the materials used in the particle effects aswell. The star texture for the objective marker was sourced from the UE4 Content Examples. Blueprint to draw the objective marker on screen was also sourced from the same location (this was converted to C++). The colour grade was sourced from [here](https://docs.unrealengine.com/en-us/Engine/Rendering/PostProcessEffects/ColorGrading).
+The smoke particle effect was sourced from the UE4 Starter Content, in addition to about half of the materials used in the particle effects aswell. The star texture for the objective marker was sourced from the UE4 Content Examples. Blueprint to draw the objective marker on screen was also sourced from the same location (I later converted this to C++). The colour grade was sourced from [here](https://docs.unrealengine.com/en-us/Engine/Rendering/PostProcessEffects/ColorGrading) and tweaked in various ways to make the game more vibrant and saturated.
 
 ## Lessons Learned
 
-Many lessons were learned throughout the development of this project. I estimate it took me somewhere in the range of 4-5 months to complete and was a very steep learning curve. All in all, scope was the major challenge. At the beginning I didn't know how big I wanted the project to be or in fact where exactly I wanted to go with it. As I continued development I changed ideas many times over, some by choice, some due to lack of expertise on my part. If I had my time over to do it again, I would have done something much smaller and focused, something in the nature of a few weeks instead of a few months. Another major problem I encountered was best practises, being a novice game developer it was very difficult to know if the solutions I completed were actually done in a logical and somewhat efficient way. In fact, in the earlier stages of the project I would estimate 2-3 weeks was spent on the whiteboard trying to figure out the best solutions to problems. It wasn't until I took a more laissez-faire approach and allowed myself to fail that I actually made progress. I had a self-imposed deadline at the end of July to complete the project, and well, at the time of writing this it is the 28th of October - I realise the importance of organisation now and keeping a tight schedule. Although certain parts of the development were stressful, I still thoroughly enjoyed the process and am looking forward to doing it again.
+Many lessons were learned throughout the development of this project. I estimate it took me somewhere in the range of 4-5 months to complete and was a very steep learning curve. All in all, scope was the major challenge. At the beginning I didn't know how big I wanted the project to be or in fact where exactly I wanted to go with it. As I continued development, I changed ideas many times over, some by choice, some due to lack of expertise on my part. If I had my time over to do it again, I would have done something much smaller and focused, something in the nature of a few weeks instead of a few months. Another major problem I encountered was best practises. Being a novice, it was very difficult to know if the solutions I completed were actually done in a logical and somewhat efficient way. In fact, in the earlier stages of the project I would estimate 2-3 weeks was spent on the whiteboard trying to figure out the best solutions to problems. It wasn't until I took a more laissez-faire approach and allowed myself to fail that I actually made progress. I had a self-imposed deadline at the end of July to complete the project, and well, at the time of writing this it is the 28th of October - I realise the importance of organisation now and keeping a tight schedule. Although certain parts of the development were stressful, I still thoroughly enjoyed the process and am looking forward to doing it again.
 
 ## Other Notes
 
-The [UE4 Forums](https://forums.unrealengine.com/) were an invaluable resource throughout both for code snippets and resolving bugs. Although I did my best to give the most terse description I could of the major systems of the project there is still alot I'm leaving out. Due to self-imposed time constraints I didn't have enough time to do menu screens and a save system. With that in mind, once there are no more quests in the quest log you can exit the game by just closing the application. Upon initial start-up the game may ask for permissions to run or conflict with anti-virus software presenting a 'fatal error' window in the process. Regardless, it should still run once these windows are closed, or you wait a minute for the anti-virus to finish it's checks. Thanks for reading.
+The [UE4 Forums](https://forums.unrealengine.com/) were an invaluable resource throughout both for code snippets and resolving bugs. Although I did my best to give the most terse description I could of the major systems of the project there is still alot I'm leaving out. Due to self-imposed time constraints I didn't have enough time to do menu screens and a save system. With that in mind, once there are no more quests in the quest log you can exit the game by just closing the application. I did my upmost to quell any game crashing bugs, and I'm confident you most likely will not run into any. However, a few minor ones may still rear their head having discovered these from my own playtests and asking my friends to playtest too (these are listed below). Upon initial start-up, the game may ask for permissions to run or conflict with anti-virus software presenting a 'fatal error' window in the process. Regardless, it should still run once these windows are closed, or you wait a minute for the anti-virus to finish it's checks. Thanks for reading.
+
+## Bugs
+
+* AI characters may walk on water to get to their destination.
+* Possible bug in flower fetching quest where the player can complete the quest with 4 flowers intead of 5.
+* Turrets may not revert back to their default positions after their fireworks display and remain in an upward facing pose.
