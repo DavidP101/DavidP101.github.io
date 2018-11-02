@@ -43,7 +43,7 @@ An actor was created to house the logic called 'DayNightCycle'. A number of acto
 ![Dialogue01](/images/dialogue01.png)
 
 Any actor that is capable of dialogue has a dialogue component. In here I have variables that store data tables for quest dialogue and non-quest dialogue.
-The dialogue system is not true branching dialogue (as it's not implemented with a tree structure) but a more basic data table approach whereby the player and whoever the player is talking to have string arrays of responses. If the player selects an option that appears in let's say, row 0 column 0 of the arra, then on the next row of the data table it will fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate outcomes data table for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
+The dialogue system is not true branching dialogue (as it's not implemented with a tree structure) but a more basic data table approach whereby the player and whoever the player is talking to have string arrays of responses. If the player selects an option that appears in let's say, row 0 column 0 of the array, then on the next row of the data table it will fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate outcomes data table for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
 
 ![Dialogue02](/images/casualdialogue.png)
 
