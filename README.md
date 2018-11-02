@@ -33,14 +33,17 @@ Whenever the volume around the player comes into contact with an interactable it
 ![Day](/images/daytime.png)
 ![Night](/images/nighttime.png)
 
-An actor was created to house the logic called 'DayNightCycle'. A number of actors are involved in the cycle including the sky sphere, directional light, and sky light. To drive various values associated with each (in particular the directional light) 0-1 curves were created e.g a curve to update the directional light's colour, another curve to update intensity and so on. I then made a timeline to drive an alpha curve where the resulting value would be fed into each of the curves above. Hourly/minute updates are broadcasted by means of a delegate to any actors across the project that are interested (e.g. street lights).
+An actor was created to house the logic called 'DayNightCycle'. A number of actors are involved in the cycle including the sky sphere, directional light, and sky light. To drive various values associated with each (in particular the directional light) 0-1 curves were created e.g a curve to update the directional light's colour, another curve to update sunlight intensity and so on. I then made a timeline to drive an alpha curve where the resulting value would be fed into each of the curves above. Hourly/minute updates are broadcasted by means of a delegate (held inside the game mode) to any actors across the project that are interested (e.g. street lights).
 
 ### Dialogue System
 
 ![Dialogue01](/images/dialogue01.png)
 
 Any actor that is capable of dialogue has a dialogue component. In here I have variables that store data tables for quest dialogue and non-quest dialogue.
-The dialogue system is not true branching dialogue (as it's not implemented with a tree structure) but a more basic data table approach whereby the player and whoever the player is talking to have string arrays of responses. If the player selects an option that appears in let's say, row 0 column 0 of the array, then on the next row of the data table it will fetch the AI response at that same location. Once the player clicks on the option, I then check a seperate outcomes data table for any outcome that might result. Outcomes are represented by an enum, I have two outcomes in my project 'UpdateObjective' and 'Exit'.
+
+The dialogue system is not true branching dialogue (as it's not implemented with a tree structure) but a more basic data table approach. Whenever the player engages in quest dialogue, the dialogue component fetches an array of dialogue structs that coincide with the current stage of the quest from the quest actor's data table. Inside this data table are string arrays of player and npc responses.
+
+Once dialogue starts, if the player selects an option that appears in let's say, row 0 column 0 of the player responses, then it will fetch the npc response at that same location in the npc responses. Once the player clicks on the dialogue option, it then checks a seperate outcomes data table for any outcome that might result. Outcomes are represented by an enum. I have two outcomes in my project 'UpdateObjective' and 'Exit'.
 
 ![Dialogue02](/images/casualdialogue.png)
 
