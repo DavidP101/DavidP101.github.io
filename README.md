@@ -4,7 +4,7 @@
 
 ## Executable Link
 
-[Here](https://drive.google.com/open?id=1_keTpHczPYsHIKqk5v1NsBZZKpkUjGkT) is a link to a .zip file containing the executable. The code base is available on github to browse through.
+[Here](https://drive.google.com/open?id=1_keTpHczPYsHIKqk5v1NsBZZKpkUjGkT) is a link to a .zip file containing the executable. The code base is available on github to browse through. If you wish to download the project to take a closer look you'll need git-lfs installed.
 
 ## About Me
 
