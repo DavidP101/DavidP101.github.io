@@ -117,4 +117,4 @@ Many lessons were learned throughout the development of this project. I estimate
 
 ## Other Notes
 
-The [UE4 Forums](https://forums.unrealengine.com/) were an invaluable resource throughout both for code snippets and resolving bugs. Although I did my best to give the most terse description I could of the major systems of the project there is stil alot I'm leaving out.
+The [UE4 Forums](https://forums.unrealengine.com/) were an invaluable resource throughout both for code snippets and resolving bugs. Although I did my best to give the most terse description I could of the major systems of the project there is stil alot I'm leaving out. Due to self-imposed time constraints I didn't have enough time to do menu screens and a save system; once there are no more quests in the quest log you can exit the game by just closing the application. Upon initial start-up the game may ask for permissions to run or conflict with anti-virus software presenting an error in the process. Regardless, it should still run once these windows are closed. Thanks for reading.
