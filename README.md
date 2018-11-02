@@ -113,7 +113,7 @@ The majority of the audio was sourced from [BBC Sound Effects](http://bbcsfx.acr
 
 ## Particle & UI
 
-The smoke particle effect was sourced from the UE4 Starter Content in addition to the majority of materials used in the particle effects aswell. The star texture for the objective marker was sourced from the UE4 Content Examples. Blueprint to draw the objective marker on screen was also sourced from the same location (this was converted to C++).
+The smoke particle effect was sourced from the UE4 Starter Content in addition to the majority of materials used in the particle effects aswell. The star texture for the objective marker was sourced from the UE4 Content Examples. Blueprint to draw the objective marker on screen was also sourced from the same location (this was converted to C++). The colour grade was sourced from [here](https://docs.unrealengine.com/en-us/Engine/Rendering/PostProcessEffects/ColorGrading).
 
 ## Lessons Learned
 
