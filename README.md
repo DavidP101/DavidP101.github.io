@@ -25,7 +25,7 @@ Inside my project settings I created a custom collision channel in my project se
 
 To create an actor that's capable of interaction I first changed the collision type on one of the actor's static mesh components (if the actor did not have a static mesh component I created a volume instead and applied it to that). Following this, I then implemented the Interactable interface and provided my definitions for Interact and Exit Interact.
 
-Whenever the volume around the player comes into contact with an interactable it then adds it to a potential interactables array and the best one is chosen by means of a dot product with the player's camera. I used this tutorial for reference while making this sytem.
+Whenever the volume around the player comes into contact with an interactable it then adds it to a potential interactables array and the best one is chosen by means of a dot product with the player's camera. I used [this](https://www.youtube.com/watch?v=JDrdfCyujJE&index=1&list=PL5ADyRqL3M8HZru3SHTWF_iL28V25WaIp) tutorial for reference while making this sytem.
 
 ### Day-Night Cycle
 
