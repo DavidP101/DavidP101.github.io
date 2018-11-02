@@ -41,7 +41,7 @@ An actor was created to house the logic called 'DayNightCycle'. A number of acto
 
 Any actor that is capable of dialogue has a dialogue component. In here I have variables that store data tables for quest dialogue and non-quest dialogue.
 
-The dialogue system is not true branching dialogue (as it's not implemented with a tree structure) but a more basic data table approach. Whenever the player engages in quest dialogue, the dialogue component fetches an array of dialogue structs that coincide with the current stage of the quest from the quest actor's data table. Inside this data table are string arrays of player and npc responses.
+The dialogue system is not true branching dialogue (as it's not implemented with a tree structure) but a more basic data table approach. Whenever the player engages in quest dialogue, the dialogue component fetches an array of dialogue structs that coincide with the current stage of the quest from the quest actor's data table. Inside these structs are string arrays of player and npc responses.
 
 Once dialogue starts, if the player selects an option that appears in let's say, row 0 column 0 of the player responses, then it will fetch the npc response at that same location in the npc responses. Once the player clicks on the dialogue option, it then checks a seperate outcomes data table for any outcome that might result. Outcomes are represented by an enum. I have two outcomes in my project 'UpdateObjective' and 'Exit'.
 
