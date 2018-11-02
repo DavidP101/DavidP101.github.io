@@ -4,7 +4,7 @@
 
 ## Executable Link
 
-[Here](https://drive.google.com/open?id=1_keTpHczPYsHIKqk5v1NsBZZKpkUjGkT) is a link to a .zip file containing the executable. The code base is available on github to browse through. If you wish to download the project to take a closer look you'll need git-lfs installed.
+[Here](https://drive.google.com/open?id=1_keTpHczPYsHIKqk5v1NsBZZKpkUjGkT) is a link to a .zip file containing the executable. The code base is available on github to browse through. If you wish to download the project to take a closer look you'll need git-lfs installed. I used SourceTree (which comes with git-lfs) to clone my project. Once it's cloned, double click 'Portfolio.uproject' which will build the project and open the editor. After this, close the editor and right-click the 'Portfolio.uproject' and select 'Generate Visual Studio project files'. Now you should have access to all my project's content. Open Portfolio.uproject to re-enter the editor.
 
 ## About Me
 
