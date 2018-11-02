@@ -111,7 +111,7 @@ The character meshes and the majority of animations were sourced from [Mixamo](h
 
 The majority of the audio was sourced from [BBC Sound Effects](http://bbcsfx.acropolis.org.uk/). Audio for the UI was sourced from the [Content Examples](https://docs.unrealengine.com/en-us/Resources/ContentExamples). The audio for the footsteps was sourced from the [Couch Knights Demo](https://www.unrealengine.com/marketplace/couch-knights).
 
-## Particle & UI
+## Particles & UI
 
 The smoke particle effect was sourced from the UE4 Starter Content, in addition to about half of the materials used in the particle effects aswell. The star texture for the objective marker was sourced from the UE4 Content Examples. Blueprint to draw the objective marker on screen was also sourced from the same location (I later converted this to C++). The colour grade was sourced from [here](https://docs.unrealengine.com/en-us/Engine/Rendering/PostProcessEffects/ColorGrading) and tweaked in various ways to make the game more vibrant and saturated.
 
