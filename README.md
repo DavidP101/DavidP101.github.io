@@ -8,7 +8,7 @@
 
 ## About Me
 
-Hello there. My name's David, I'm 23 years old, and I hail from Ireland. I graduated with first-class honours in Computer Science and Information Technology in 2017 and ever since then I've been learning UE4, gaining competence in Blender, and working on a portfolio.
+Hello there. My name's David, I'm 23 years old, and I hail from Ireland. I graduated with first-class honours in Computer Science and Information Technology in 2017. Ever since then I've been learning UE4, gaining competence in Blender, and working on a portfolio.
 
 ## Overview
 
