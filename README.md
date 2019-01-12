@@ -126,6 +126,7 @@ The [UE4 Forums](https://forums.unrealengine.com/) were an invaluable resource t
 
 ## Gallery
 ![Map shot 1](/images/mapviewshot1.png)
+![Map shot 1](/images/mapviewshot2.png)
 
 ## Bugs
 
