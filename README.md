@@ -125,7 +125,7 @@ I had a self-imposed deadline at the end of July to complete the project, and we
 The [UE4 Forums](https://forums.unrealengine.com/) were an invaluable resource throughout both for code snippets and resolving bugs. Although I did my best to give the most terse description I could of the major systems of the project there is still alot I'm leaving out. Due to self-imposed time constraints I didn't have enough time to do menu screens and a save system. With that in mind, once there are no more quests in the quest log you can exit the game by just closing the application. I did my upmost to quell any game crashing bugs, and I'm confident you most likely will not run into any. However, a few minor ones may still rear their head having discovered these from my own playtests and asking my friends to playtest too (these are listed below). Upon initial start-up, the game may ask for permissions to run or conflict with anti-virus software presenting a 'fatal error' window in the process. Regardless, it should still run once these windows are closed, or you wait a minute for the anti-virus to finish it's checks. Thanks for reading.
 
 ## Gallery
-![Map shot 1](/images/mapshot1.png)
+![Map shot 1](/images/mapviewshot1.png)
 
 ## Bugs
 
